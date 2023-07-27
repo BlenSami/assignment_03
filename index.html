@@ -29,6 +29,7 @@
           extend: {
             backgroundImage: {
               'hero-bg': "url('./images/banner1.png')",
+              'meet-bg': "url('./images/team.png')",
             },
           },
         },
@@ -53,7 +54,7 @@
       }
     </style>
   </head>
-  <body >
+  <body class="font-lato">
     <!-- navbar -->
     <header class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
       <div
@@ -148,18 +149,25 @@
 
     <!-- banner -->
 
-     <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
-  <div class="carousel w-full  opacity-90 rounded-lg md:rounded-none lg:rounded-none ">
+     <section class="max-w-screen-xl mx-auto  px-8 md:px-16 lg:px-24 py-5 my-10 ">
+     
+  <div class=" relative  carousel w-full  opacity-90 rounded-lg md:rounded-none lg:rounded-none ">
+ 
     <!-- slide 1 -->
     <div id="slide1" class="carousel-item relative w-full">
-      <img src="./images/banner1.png" class="w-full" />
+      
+        <img src="./images/banner1.png" class="w-full  " />
+    
+      
       <div class="absolute flex items-center justify-center w-full h-full">
        
         <a href="#slide4" class="btn btn-circle absolute left-5
-        bg-black border-none"><i class="fa-solid fa-angle-left text-white"></i></a>
+        bg-black border-none">
+        <i class="fa-solid fa-angle-left text-white"></i>
+        </a>
   
         
-        <div class="slider-content text-white text-center">
+        <div class=" slider-content text-white text-center">
           <h2 class=" text-[18px] font-extrabold md:text-[72px] text-white">Exotic tastes at your <br>
             doorstep</h2>
             <p class="text-[10px] md:text-2xl">
@@ -179,7 +187,7 @@
       <img src="./images/banner2.png" class="w-full" />
       <div class="absolute flex items-center justify-center w-full h-full">
        
-        <a href="#slide1" class="btn btn-circle absolute left-5 bg-black border-none">&#10094;</a>
+        <a href="#slide1" class="btn btn-circle absolute left-5 bg-black border-none"> <i class="fa-solid fa-angle-left text-white"></i></a>
   
         
         <div class="slider-content text-white text-center">
@@ -193,7 +201,7 @@
         </div>
   
         <!-- Right slider icon and its link -->
-        <a href="#slide3" class="btn btn-circle  absolute right-5 bg-black border-none">&#10095;</a>
+        <a href="#slide3" class="btn btn-circle  absolute right-5 bg-black border-none"> <i class="fa-solid fa-angle-right text-white"></i></a>
       </div>
     </div>
 
@@ -245,9 +253,9 @@
       </div>
     </div>
   </div>
-   
-  <div class=" hidden md:block lg:block">
-    <div class=" relative ml-[80px] w-[80%] -mt-7 grid grid-cols-4  p-5 gap-5 rounded-xl drop-shadow-xl bg-white">
+   <!-- bonus -->
+  <div class=" hidden md:block lg:block ">
+    <div class=" relative ml-[100px] w-[80%] -mt-7 grid grid-cols-4  p-5 gap-5 rounded-xl drop-shadow-xl bg-white">
       <div class=" ">
         <img src="./images/fruit1.png" alt="">
         <p class="text-center pt-3">Grape</p>
@@ -272,7 +280,7 @@
     </section>
 
     
-    <main class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+  <main class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
 
       <!-- Deal Of The Day -->
       <div class=" flex flex-col md:flex-row lg:flex-row gap-10 md:gap-28">
@@ -321,7 +329,6 @@
 
       <!-- card -->
 
- 
         <div class=" mt-5 gap-4 grid md:grid-cols-2 lg:grid-cols-4">
           <!-- card-1 -->
           <div class="card card-compact  bg-base-100 shadow-xl border-2">
@@ -530,10 +537,306 @@
           
         </div>
 
-      
+      <!-- Meet THe Team Section -->
+
+      <section class=" z-20 max-w-screen-xl mx-auto px-5 md:px-16 lg:px-24 py-5 my-10 relative bg-cover bg-center  " 
+      style="background-image: url('./images/team.png');   ">
+      <div class="-z-50 overlay left-0 top-0 absolute bg-[#121212b3] w-[100%] h-[100%] border-none rounded-[8px] ">
+        
+      </div>
+        <div class="pt-5 z-10">
+          <h3 class="text-center font-extrabold text-5xl text-[#fff] mb-5">Meet the team section</h3>
+          <p class="text-center text-[16px] font-[500px] text-white">
+            Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+          </p>
+        </div>
+        <!-- team icon -->
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  pl-[70px] md:pl-10 gap-5  " >
+        <div class="">
+          <img src="./images/member1.png" alt="">
+          <div class="pt-5">
+            <h3 class="text-white text-[24px]">Awlad Hossain</h3>
+            <p class="text-white pl-6 ">Fruits Expert</p>
+            <div class="flex pl-3 gap-4 pt-3">
+              <img src="./images/facebook 1.png" alt="">
+              <img src="./images/twitter (1) 1.png" alt="">
+              <img src="./images/linkedin 1.png" alt="">
+            
+           
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <img src="./images/member2.png" alt="">
+          <div class="pt-5">
+            <h3 class="text-white text-[24px] ">Safia Chowdhury</h3>
+            <p class="text-white pl-6 ">Fruits Expert</p>
+            <div class="flex pl-4 gap-4 pt-3">
+              <img src="./images/facebook 1.png" alt="">
+              <img src="./images/twitter (1) 1.png" alt="">
+              <img src="./images/linkedin 1.png" alt="">
+            
+           
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <img src="./images/member3.png" alt="">
+          <div class="pt-5">
+            <h3 class="text-white text-[24px]">Rokib Hossain</h3>
+            <p class="text-white pl-6 ">Fruits Expert</p>
+            <div class="flex pl-4 gap-4 pt-3">
+              <img src="./images/facebook 1.png" alt="">
+              <img src="./images/twitter (1) 1.png" alt="">
+              <img src="./images/linkedin 1.png" alt="">
+            
+           
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <img src="./images/member4.png" alt="">
+          <div class="pt-5">
+            <h3 class="text-white text-[24px] pl-10">Chaity</h3>
+            <p class="text-white pl-7 ">Fruits Expert</p>
+            <div class="flex pl-4 gap-4 pt-3">
+              <img src="./images/facebook 1.png" alt="">
+              <img src="./images/twitter (1) 1.png" alt="">
+              <img src="./images/linkedin 1.png" alt="">
+            
+           
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      </section>
+
+      <!-- why choose Us -->
+      <section class="max-w-screen-2xl mx-auto px-8  py-5 my-10">
+        <div class="text-center">
+          <h2 class=" text-3xl md:text-5xl font-extrabold mb-6">
+            Why Choose Us
+          </h2>
+          <p class="text-[16px] font-medium text-[#12121299]" >Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+
+    <!-- middle section -->
+        <div class="grid  md:grid-cols-3  gap-5  ">
+            <div class="mt-10 ">
+              
+            
+                <div class="flex flex-col items-center md:flex-row lg:flex-row  gap-5">
+                  <img class="rounded-full bg-[#1212121a] p-5
+                  w-[60px] md:w-[64px] h-[60px] md:h-[64px]" src="./images/group 1.png" alt="">
+                  <h3 class="text-[#121212] font-extrabold text-2xl ">
+                    Dedicated Team
+                    
+                    <div class=" border  my-3 border-[#121212cc]">
+
+                    </div>
+                  </h3>
+  
+                </div>
+              
+
+                <p class="text-[#12121299] text-[16px] font-medium text-center md:text-left md:ml-20 mb-12 ">
+                  Professional employees are there for you to pick the most amazing and fresh fruits.
+                </p>
+              
+
+             
+             
+                <div class="flex flex-col items-center md:flex-row lg:flex-row  gap-5">
+                  <img class="rounded-full bg-[#1212121a] p-5
+                  w-[60px] md:w-[64px] h-[60px] md:h-[64px]" src="./images/love 1.png" alt="">
+                  <h3 class="text-[#121212] font-extrabold text-2xl ">
+                    Fresh is Best
+                    
+                    <div class=" border  my-3 border-[#121212cc]">
+
+                    </div>
+                  </h3>
+  
+                </div>
+              
+
+                <p class="text-[#12121299] text-[16px] font-medium text-center md:text-left md:ml-20 mb-12 ">
+                  Professional employees are there for you to pick the most amazing and fresh fruits.
+                </p>
+              
+             
+              
+             
+
+             
+                <div class="flex flex-col items-center md:flex-row lg:flex-row  gap-5">
+                  <img class="rounded-full bg-[#1212121a] p-5
+                  w-[60px] md:w-[64px] h-[60px] md:h-[64px]" src="./images/gift-box 1.png" alt="">
+                  <h3 class="text-[#121212] font-extrabold text-2xl ">
+                    Gift Certificates
+                    
+                    <div class=" border  my-3 border-[#121212cc]">
+
+                    </div>
+                  </h3>
+  
+                </div>
+              
+
+                <p class="text-[#12121299] text-[16px] font-medium text-center md:text-left md:ml-20 mb-12 ">
+                  Professional employees are there for you to pick the most amazing and fresh fruits.
+                </p>
+              
+
+            </div>
+              <!-- untouched -->
+              <div class="flex justify-center items-center">
+                <img class="h-[70%] w-full" src="./images/whychoose1.png" alt="">
+              </div>
+            
+              <!-- right  -->
+              <div class=" mt-10 ">
+
+
+             
+                <div class="flex flex-col md:flex-row-reverse gap-5 items-center">
+                  <img class="rounded-full bg-[#1212121a] p-5
+                  w-[60px] md:w-[64px] h-[60px] md:h-[64px]" src="./images/fruit 1.png" alt="">
+                  <h3 class="text-[#121212] font-extrabold text-2xl">
+                    Integrated Supplier
+                    
+                    <div class="my-3 border-2  border-[#121212cc]">
+
+                    </div>
+                  </h3>
+  
+                </div>
+
+
+                <p class="text-[#12121299] text-[16px] font-medium  md:mr-20 mb-12 text-center md:text-right ">
+                  Professional employees are there for you to pick the most amazing and fresh fruits.
+                </p>
+              
+
+              
+              
+                <div class="flex flex-col md:flex-row-reverse gap-5 items-center">
+                  <img class="rounded-full bg-[#1212121a] p-5
+                  w-[60px] md:w-[64px] h-[60px] md:h-[64px]" src="./images/ice-cream 1.png" alt="">
+                  <h3 class="text-[#121212] font-extrabold text-2xl">
+                    Sustainable Practice
+                    
+                    <div class="my-3 border-2  border-[#121212cc]">
+
+                    </div>
+                  </h3>
+  
+                </div>
+
+
+                <p class="text-[#12121299] text-[16px] font-medium  md:mr-20 mb-12 text-center md:text-right ">
+                  Professional employees are there for you to pick the most amazing and fresh fruits.
+                </p>
+              
+
+              
+              
+                <div class="flex flex-col md:flex-row-reverse gap-5 items-center">
+                  <img class="rounded-full bg-[#1212121a] p-5
+                  w-[60px] md:w-[64px] h-[60px] md:h-[64px]" src="./images/like 1.png" alt="">
+                  <h3 class="text-[#121212] font-extrabold text-2xl">
+                    Sustainable Practice
+                    
+                    <div class="my-3 border-2  border-[#121212cc]">
+
+                    </div>
+                  </h3>
+  
+                </div>
+
+
+                <p class="text-[#12121299] text-[16px] font-medium  md:mr-20 mb-12 text-center md:text-right ">
+                  Professional employees are there for you to pick the most amazing and fresh fruits.
+                </p>
+             
+
+            </div>
+
+          </div>
+
+
+      </section>
+
+
 
       </main>
 
+
+      <footer class="footer footer-center pt-10 pb-10 bg-[#121212] text-base-content rounded  ">
+
+        <div class="flex md:gap-5 font-lato">
+          <img src="./images/logo.png" alt="">
+          <h3 class="text-white text-2xl md:text-5xl">Fruit Brust</h3>
+        </div>
+
+        <div class="grid grid-cols-4 md:grid-flow-col  text-white">
+          <a class="link link-hover">About us</a> 
+          <a class="link link-hover">Contact</a> 
+          <a class="link link-hover">Shop</a> 
+          <a class="link link-hover">All Fruits</a>
+          <div>
+           
+            <a class="link link-hover ">Support</a>
+          </div>
+          <a class="link link-hover  ">My Account</a>
+          
+            
+          
+          
+        </div> 
+        
+        
+        
+        
+        
+        <div>
+          <div class="grid grid-flow-col gap-4">
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+     <g clip-path="url(#clip0_12_5266)">
+    <path d="M40 7.5975C38.5125 8.25 36.9275 8.6825 35.275 8.8925C36.975 7.8775 38.2725 6.2825 38.8825 4.36C37.2975 5.305 35.5475 5.9725 33.6825 6.345C32.1775 4.7425 30.0325 3.75 27.6925 3.75C23.1525 3.75 19.4975 7.435 19.4975 11.9525C19.4975 12.6025 19.5525 13.2275 19.6875 13.8225C12.87 13.49 6.8375 10.2225 2.785 5.245C2.0775 6.4725 1.6625 7.8775 1.6625 9.39C1.6625 12.23 3.125 14.7475 5.305 16.205C3.9875 16.18 2.695 15.7975 1.6 15.195C1.6 15.22 1.6 15.2525 1.6 15.285C1.6 19.27 4.4425 22.58 8.17 23.3425C7.5025 23.525 6.775 23.6125 6.02 23.6125C5.495 23.6125 4.965 23.5825 4.4675 23.4725C5.53 26.72 8.545 29.1075 12.13 29.185C9.34 31.3675 5.7975 32.6825 1.9625 32.6825C1.29 32.6825 0.645 32.6525 0 32.57C3.6325 34.9125 7.9375 36.25 12.58 36.25C27.67 36.25 35.92 23.75 35.92 12.915C35.92 12.5525 35.9075 12.2025 35.89 11.855C37.5175 10.7 38.885 9.2575 40 7.5975Z" fill="white"/>
+    </g>
+  <defs>
+    <clipPath id="clip0_12_5266">
+      <rect width="40" height="40" fill="white"/>
+    </clipPath>
+  </defs>
+</svg></a> 
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <g clip-path="url(#clip0_12_5269)">
+                <path d="M40 20C40 29.9828 32.6859 38.257 23.125 39.757V25.7813H27.7852L28.6719 20H23.125V16.2484C23.125 14.6664 23.9 13.125 26.3844 13.125H28.9062V8.20313C28.9062 8.20313 26.6172 7.8125 24.4289 7.8125C19.8609 7.8125 16.875 10.5813 16.875 15.5938V20H11.7969V25.7813H16.875V39.757C7.31406 38.257 0 29.9828 0 20C0 8.95469 8.95469 0 20 0C31.0453 0 40 8.95469 40 20Z" fill="white"/>
+                <path d="M27.7852 25.7812L28.6719 20H23.125V16.2484C23.125 14.6667 23.8998 13.125 26.3843 13.125H28.9062V8.20312C28.9062 8.20312 26.6175 7.8125 24.4293 7.8125C19.8609 7.8125 16.875 10.5813 16.875 15.5938V20H11.7969V25.7812H16.875V39.757C17.8933 39.9167 18.9369 40 20 40C21.0631 40 22.1067 39.9167 23.125 39.757V25.7812H27.7852Z" fill="#1877F2"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_12_5269">
+                  <rect width="40" height="40" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg></a> 
+
+
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="58" height="40" viewBox="0 0 58 40" fill="none">
+              <path d="M55.9526 6.25899C55.294 3.81162 53.3644 1.88249 50.9175 1.22347C46.4468 0 28.5643 0 28.5643 0C28.5643 0 10.6821 0 6.21148 1.17683C3.81162 1.83542 1.83498 3.81206 1.17639 6.25899C0 10.7292 0 20 0 20C0 20 0 29.3174 1.17639 33.741C1.83542 36.1879 3.76455 38.1175 6.21192 38.7765C10.7292 40 28.5647 40 28.5647 40C28.5647 40 46.4468 40 50.9175 38.8232C53.3649 38.1646 55.294 36.235 55.953 33.7881C57.1294 29.3174 57.1294 20.0471 57.1294 20.0471C57.1294 20.0471 57.1765 10.7292 55.9526 6.25899Z" fill="white"/>
+              <path d="M22.8706 28.5648L37.7409 20.0001L22.8706 11.4354V28.5648Z" fill="#FF0000"/>
+            </svg></a>
+          </div>
+        </div> 
+
+      </footer>
 
   </body>
 </html>
